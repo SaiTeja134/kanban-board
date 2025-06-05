@@ -82,6 +82,12 @@ npm start
 ```
 ---
 
+### 3. Setup Frontend
+```bash
+cd ../frontend
+npm install
+npm start
+```
 
 ## 📦 Dummy Test Data
 
