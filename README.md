@@ -55,17 +55,16 @@ employee-task-app/
 
 ---
 
-###🤝 Contributing
+## 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to fork the repo and submit a pull request.
 
+## 📄 License
+**This project is licensed under the MIT License.**
 
-📄 License
-This project is licensed under the MIT License.
-
-👨‍💻 Author
-Sai Teja
-GitHub: SaiTeja134
-Email: saiteja.gangavaram09@gmail.com
+## 👨‍💻 Author
+**Sai Teja**  
+**GitHub:** [SaiTeja134](https://github.com/SaiTeja134)  
+**Email:** saiteja.gangavaram09@gmail.com
 
 ## ⚙️ Installation & Setup
 
