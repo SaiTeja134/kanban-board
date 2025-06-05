@@ -55,7 +55,7 @@ employee-task-app/
 
 ---
 
-🤝 Contributing
+###🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to fork the repo and submit a pull request.
 
 
