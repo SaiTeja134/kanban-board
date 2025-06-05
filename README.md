@@ -64,8 +64,48 @@ git clone https://github.com/<your-username>/employee-task-app.git
 cd employee-task-app
 ```
 
+### 2. Setup Backend
+```bash
+cd backend
+npm install
+```
+Create a .env file in the backend folder with:
+
+```env
+PORT=3000
+MONGO_URI=mongodb://localhost:27017/employee-task-db
+```
+Then start the server:
+
+```bash
+npm start
+```
 ---
 
+
+## 📦 Dummy Test Data
+
+### User
+```json
+{
+  "username": "john123",
+  "password": "password123",
+  "role": "admin",
+  "fullName": "John Doe",
+  "position": "Team Lead",
+  "department": "Engineering",
+  "phoneNumber": "9876543210"
+}
+```
+### Task
+```
+{
+  "title": "Design UI for Dashboard",
+  "description": "Create Figma mockups for the dashboard screen.",
+  "status": "To Do",
+  "deadline": "2025-06-10"
+}
+```
 
 ## 📬 API Endpoints
 
