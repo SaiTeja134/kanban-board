@@ -104,7 +104,7 @@ npm start
 }
 ```
 ### Task
-```
+```json
 {
   "title": "Design UI for Dashboard",
   "description": "Create Figma mockups for the dashboard screen.",
