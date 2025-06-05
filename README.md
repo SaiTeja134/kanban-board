@@ -55,6 +55,40 @@ employee-task-app/
 
 ---
 
+## ⚙️ Installation & Setup
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/<your-username>/employee-task-app.git
+cd employee-task-app
+```
+
+---
+
+
+## 📬 API Endpoints
+
+### 🧑‍💼 Users
+| Method | Endpoint                     | Description                     |
+|--------|------------------------------|---------------------------------|
+| GET    | `/users`                     | Get all users                   |
+| GET    | `/users/:id`                 | Get user by ID                  |
+| GET    | `/users/by-username?username=XXX` | Get user by username        |
+| POST   | `/users`                     | Create/Register user            |
+| PUT    | `/users/:id`                 | Update user                     |
+| DELETE | `/users/:id`                 | Delete user                     |
+
+### 📋 Tasks
+| Method | Endpoint       | Description               |
+|--------|----------------|---------------------------|
+| GET    | `/tasks`       | Get all tasks             |
+| GET    | `/tasks/:id`   | Get task by ID            |
+| POST   | `/tasks`       | Create a new task         |
+| PUT    | `/tasks/:id`   | Update full task          |
+| PATCH  | `/tasks/:id`   | Update task status        |
+| DELETE | `/tasks/:id`   | Delete task               |
+
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to fork the repo and submit a pull request.
 
@@ -66,12 +100,5 @@ Contributions, issues, and feature requests are welcome! Feel free to fork the r
 **GitHub:** [SaiTeja134](https://github.com/SaiTeja134)  
 **Email:** saiteja.gangavaram09@gmail.com
 
-## ⚙️ Installation & Setup
-
-### Step 1: Clone the Repository
-
-```bash
-git clone https://github.com/<your-username>/employee-task-app.git
-cd employee-task-app
 
 
