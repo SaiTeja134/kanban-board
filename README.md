@@ -55,6 +55,18 @@ employee-task-app/
 
 ---
 
+🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to fork the repo and submit a pull request.
+
+
+📄 License
+This project is licensed under the MIT License.
+
+👨‍💻 Author
+Sai Teja
+GitHub: SaiTeja134
+Email: saiteja.gangavaram09@gmail.com
+
 ## ⚙️ Installation & Setup
 
 ### Step 1: Clone the Repository
@@ -64,79 +76,3 @@ git clone https://github.com/<your-username>/employee-task-app.git
 cd employee-task-app
 
 
-Step 2: Setup Backend
----------------------
-cd backend
-npm install
-
-Create a .env file inside backend folder:
-
-PORT=3000
-MONGO_URI=mongodb://localhost:27017/employee-task-db
-
-Start the server:
-
-npm start
-Step 3: Setup Frontend
-----------------------
-
-cd ../frontend
-npm install
-ng serve
-Visit: http://localhost:4200
-
-📬 API Endpoints
-🧑‍💼 Users
-Method	Endpoint	Description
-GET	/users	Get all users
-GET	/users/:id	Get user by ID
-GET	/users/by-username?username=XXX	Get user by username
-POST	/users	Create/Register user
-PUT	/users/:id	Update user
-DELETE	/users/:id	Delete user
-
-📋 Tasks
-Method	Endpoint	Description
-GET	/tasks	Get all tasks
-GET	/tasks/:id	Get task by ID
-POST	/tasks	Create a new task
-PUT	/tasks/:id	Update full task
-PATCH	/tasks/:id	Update task status
-DELETE	/tasks/:id	Delete task
-
-📦 Dummy Test Data
-You can use the following sample data in Postman for testing:
-
-User
-json
-{
-  "username": "john123",
-  "password": "password123",
-  "role": "admin",
-  "fullName": "John Doe",
-  "position": "Team Lead",
-  "department": "Engineering",
-  "phoneNumber": "9876543210"
-}
-Task
-json
-
-{
-  "title": "Design UI for Dashboard",
-  "description": "Create Figma mockups for the dashboard screen.",
-  "status": "To Do",
-  "deadline": "2025-06-10"
-}
-
-
-🤝 Contributing
-Contributions, issues, and feature requests are welcome! Feel free to fork the repo and submit a pull request.
-
-📄 License
-This project is licensed under the MIT License.
-
-
-👨‍💻 Author
-Sai Teja
-GitHub: SaiTeja134
-Email: saiteja.gangavaram09@gmail.com
