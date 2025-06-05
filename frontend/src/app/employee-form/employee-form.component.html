@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    <div class="card w-60">
+        <h2>Edit User</h2>
+        <form #employeeForm="ngForm" (submit)="onSubmit()">
+            <div class="form-group">
+                <label for="username" class="form-label">Full Name:</label>
+                <input type="text" class="form-control" name="username" [(ngModel)]="user.username" #usernameRef="ngModel" required>
+                <small *ngIf="usernameRef?.touched && usernameRef?.invalid">Full Name is required</small>
+            </div>
+            <div class="form-group">
+                <label for="position" class="form-label">Position:</label>
+                <input type="text" class="form-control" name="position" [(ngModel)]="user.position" #positionRef="ngModel" required>
+                <small *ngIf="positionRef?.touched && positionRef?.invalid">Position is required</small>
+            </div>
+            <div class="form-group">
+                <label for="department" class="form-label">Department:</label>
+                <input type="text" class="form-control" name="department" [(ngModel)]="user.department" #departmentRef="ngModel" required>
+                <small *ngIf="departmentRef?.touched && departmentRef?.invalid">Department is required</small>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone Number:</label>
+                <input type="text" class="form-control" name="phoneNumber" [(ngModel)]="user.phoneNumber" #phoneNumberRef="ngModel" required>
+                <small *ngIf="phoneNumberRef?.touched && phoneNumberRef?.invalid">Phone Number is required</small>
+            </div>
+            <button type="submit" [disabled]="employeeForm?.invalid">Update User</button>
+        </form>
+    </div>
+</div>

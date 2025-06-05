@@ -1,0 +1,64 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "title": "Design homepage",
+      "description": "Create a modern and responsive homepage layout",
+      "status": "To Do",
+      "deadline": "2025-06-10T00:00:00Z"
+    },
+    {
+      "id": "2",
+      "title": "Implement login feature",
+      "description": "Add user authentication using JWT",
+      "status": "In Progress",
+      "deadline": "2025-06-12T00:00:00Z"
+    },
+    {
+      "id": "3",
+      "title": "Write unit tests",
+      "description": "Add tests for the user service",
+      "status": "Done",
+      "deadline": "2025-06-08T00:00:00Z"
+    },
+    {
+      "id": "607a",
+      "title": "jddjfndfn",
+      "description": "jfndjfjnfdj",
+      "deadline": "2025-06-12",
+      "status": "To Do"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "fullName": "Admin User",
+      "position": "Manager",
+      "department": "IT",
+      "phoneNumber": "1234567890"
+    },
+    {
+      "id": "2",
+      "username": "john",
+      "password": "john123",
+      "role": "employee",
+      "fullName": "John Doe",
+      "position": "Developer",
+      "department": "Frontend",
+      "phoneNumber": "9876543210"
+    },
+    {
+      "id": "3",
+      "username": "jane",
+      "password": "jane123",
+      "role": "employee",
+      "fullName": "Jane Smith",
+      "position": "Designer",
+      "department": "UX",
+      "phoneNumber": "5551234567"
+    }
+  ]
+}

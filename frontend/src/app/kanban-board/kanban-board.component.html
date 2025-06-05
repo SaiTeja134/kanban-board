@@ -1,0 +1,54 @@
+<div class="container-fluid p-5 bg-white">
+    <div>
+        <button class="btn btn-light">Filter</button>
+        <button class="btn btn-primary ms-4" (click)="taskForm()">Add Task</button>
+    </div>
+    <p class="lead text-center">Kanban Board</p>
+    <div class="row mt-3">
+        <div id="todoList" class="col shadow-lg bg-light mx-3 p-2" cdkDropList [cdkDropListData]="todo"
+         [cdkDropListConnectedTo]="['inprogressList','doneList']"  (cdkDropListDropped)="drop($event)">
+            <p class="fw-bold">To Do ({{ todo.length }})</p>
+            <div class="p-2 mb-2 bg-light" >
+                <div class="card rounded min-vh-50 mb-3" cdkDrag *ngFor="let task of todo">
+                    <p class="fw-bold">{{task.title}}</p>
+                    <p class="lead">{{task.description}}</p>
+                    <p><b>Deadline</b>:{{task.deadline | date: 'MMM dd,yyyy'}}</p>
+                    <div class="d-flex">
+                        <button class="btn btn-block btn-primary me-3" (click)="edit(task._id)">Edit</button>
+                        <button class="btn btn-block btn-danger" (click)="delete(task._id)">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="inprogressList" class="col shadow-lg bg-light mx-3 p-2" cdkDropList
+         [cdkDropListData]="inprogress" [cdkDropListConnectedTo]="['todoList','doneList']"  (cdkDropListDropped)="drop($event)">
+            <p class="fw-bold">In Progress ({{ inprogress.length }})</p>
+            <div  class="p-2 mb-2 bg-light">
+                <div class="card rounded min-vh-50 mb-3" cdkDrag *ngFor="let task of inprogress">
+                    <p class="fw-bold">{{task.title}}</p>
+                    <p class="lead">{{task.description}}</p>
+                    <p><b>Deadline</b>:{{task.deadline | date: 'MMM dd,yyyy'}}</p>
+                    <div class="d-flex">
+                        <button class="btn btn-block btn-primary me-3" (click)="edit(task._id)">Edit</button>
+                        <button class="btn btn-block btn-danger" (click)="delete(task._id)">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  id="doneList" class="col shadow-lg bg-light mx-3 p-2"  cdkDropList [cdkDropListData]="done" [cdkDropListConnectedTo]="['todoList','inprogressList']" (cdkDropListDropped)="drop($event)">
+            <p class="fw-bold">Done ({{done.length}})</p>
+            <div class="p-2 mb-2 bg-light">
+                <div class="card rounded min-vh-50 mb-3" cdkDrag *ngFor="let task of done">
+                    <p class="fw-bold">{{task.title}}</p>
+                    <p class="lead">{{task.description}}</p>
+                    <p><b>Deadline</b>:{{task.deadline | date: 'MMM dd,yyyy'}}</p>
+                    <div class="d-flex">
+                        <button class="btn btn-block btn-primary me-3" (click)="edit(task._id)">Edit</button>
+                        <button class="btn btn-block btn-danger" (click)="delete(task._id)">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-warning position-fixed" routerLink="/employee-list" style="bottom: 20px;right:20px;z-index:1;">Employee Details</button>
+</div>
